@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="age-calculator">
+                    <div class="heading bg-blue text-white">
+                        <h1 class="font-bold text-white text-size-regular">AGE CALCULATOR</h1>
+                    </div>
+                    <div class="calculation-section bg-lightash">
+                        <div class="inputs">
+                            <div class="content date-of-birth">
+                                <div class="label  text-end">
+                                    <p class="font-regular text-size-regular">Date of Birth</p>
+                                </div>
+                                <div class="fields">
+                                    <div class="field">
+                                        <select name="months" class="font-regular text-size-regular birth-month">
+                                            <option class="month" value="1">Jan</option>
+                                            <option class="month" value="2">Feb</option>
+                                            <option class="month" value="3">Mar</option>
+                                            <option class="month" value="4">Apr</option>
+                                            <option class="month" value="5">May</option>
+                                            <option class="month" value="6">Jun</option>
+                                            <option class="month" value="7">Jul</option>
+                                            <option class="month" value="8">Aug</option>
+                                            <option class="month" value="9">Sep</option>
+                                            <option class="month" value="10">Oct</option>
+                                            <option class="month" value="11">Nov</option>
+                                            <option class="month" value="12">Dec</option>
+                                        </select>
+                                    </div>
+                                    <div class="field">
+                                        <select name="dates" id="" class="font-regular text-size-regular birth-date">
+                                            <option value="1" class="date">1</option>
+                                            <option value="2" class="date">2</option>
+                                            <option value="3" class="date">3</option>
+                                            <option value="4" class="date">4</option>
+                                            <option value="5" class="date">5</option>
+                                            <option value="6" class="date">6</option>
+                                            <option value="7" class="date">7</option>
+                                            <option value="8" class="date">8</option>
+                                            <option value="9" class="date">9</option>
+                                            <option value="10" class="date">10</option>
+                                            <option value="11" class="date">11</option>
+                                            <option value="12" class="date">12</option>
+                                            <option value="13" class="date">13</option>
+                                            <option value="14" class="date">14</option>
+                                            <option value="15" class="date">15</option>
+                                            <option value="16" class="date">16</option>
+                                            <option value="17" class="date">17</option>
+                                            <option value="18" class="date">18</option>
+                                            <option value="19" class="date">19</option>
+                                            <option value="20" class="date">20</option>
+                                            <option value="21" class="date">21</option>
+                                            <option value="22" class="date">22</option>
+                                            <option value="23" class="date">23</option>
+                                            <option value="24" class="date">24</option>
+                                            <option value="25" class="date">25</option>
+                                            <option value="26" class="date">26</option>
+                                            <option value="27" class="date">27</option>
+                                            <option value="28" class="date">28</option>
+                                            <option value="29" class="date">29</option>
+                                            <option value="30" class="date">30</option>
+                                            <option value="31" class="date">31</option>
+                                        </select>
+                                    </div>
+                                    <div class="field ">
+                                        <input type="number" class="birth-year font-regular text-size-regular"
+                                            value="2002">
+                                    </div>
+                                    <div class="field date-picker-with-image">
+                                        <div class="image-wrapper">
+                                            <img src="./image/image-1.png" alt="" class="image">
+                                            <div class="date-picker">
+                                                <input type="date" class="birth-date-picker"  title="pick a date">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content age-at-the-date-of">
+                                <div class="label  text-end">
+                                    <p class="font-regular text-size-regular">Age at the date of</p>
+                                </div>
+                                <div class="fields">
+                                    <div class="field">
+                                        <select name="months" class="font-regular text-size-regular selected-month">
+                                            <option class="month" value="1">Jan</option>
+                                            <option class="month" value="2">Feb</option>
+                                            <option class="month" value="3">Mar</option>
+                                            <option class="month" value="4">Apr</option>
+                                            <option class="month" value="5">May</option>
+                                            <option class="month" value="6">Jun</option>
+                                            <option class="month" value="7">Jul</option>
+                                            <option class="month" value="8">Aug</option>
+                                            <option class="month" value="9">Sep</option>
+                                            <option class="month" value="10">Oct</option>
+                                            <option class="month" value="11">Nov</option>
+                                            <option class="month" value="12">Dec</option>
+                                        </select>
+                                    </div>
+                                    <div class="field">
+                                        <select name="dates" id="" class="font-regular text-size-regular selected-date">
+                                            <option value="1" class="date">1</option>
+                                            <option value="2" class="date">2</option>
+                                            <option value="3" class="date">3</option>
+                                            <option value="4" class="date">4</option>
+                                            <option value="5" class="date">5</option>
+                                            <option value="6" class="date">6</option>
+                                            <option value="7" class="date">7</option>
+                                            <option value="8" class="date">8</option>
+                                            <option value="9" class="date">9</option>
+                                            <option value="10" class="date">10</option>
+                                            <option value="11" class="date">11</option>
+                                            <option value="12" class="date">12</option>
+                                            <option value="13" class="date">13</option>
+                                            <option value="14" class="date">14</option>
+                                            <option value="15" class="date">15</option>
+                                            <option value="16" class="date">16</option>
+                                            <option value="17" class="date">17</option>
+                                            <option value="18" class="date">18</option>
+                                            <option value="19" class="date">19</option>
+                                            <option value="20" class="date">20</option>
+                                            <option value="21" class="date">21</option>
+                                            <option value="22" class="date">22</option>
+                                            <option value="23" class="date">23</option>
+                                            <option value="24" class="date">24</option>
+                                            <option value="25" class="date">25</option>
+                                            <option value="26" class="date">26</option>
+                                            <option value="27" class="date">27</option>
+                                            <option value="28" class="date">28</option>
+                                            <option value="29" class="date">29</option>
+                                            <option value="30" class="date">30</option>
+                                            <option value="31" class="date">31</option>
+                                        </select>
+                                    </div>
+                                    <div class="field">
+                                        <input type="number" class="selected-year font-regular text-size-regular"
+                                            value="2022">
+                                    </div>
+                                    <div class="field date-picker-with-image">
+                                        <div class="image-wrapper">
+                                            <img src="./image/image-1.png" alt="" class="image">
+                                        </div>
+                                        <div class="date-picker">
+                                            <input type="date" class="selected-date-picker" title="pick a date">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="label text-end">
+                                </div>
+                                <div class="field checkbox-wrapper">
+                                    <input type="checkbox" name="current date">
+                                    <label for="checkbox">Recent date</label>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="label text-end"></div>
+                                <div class="button-wrapper">
+                                    <button onclick="calculation()"
+                                        class="calculation-button font-bold text-white text-size-regular">CALCULATE</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="outputs display-none">
+                            <div class="output-heading">
+                                <h1 class="font-bold text-black text-size-regular">Age:</h1>
+                            </div>
+                            <div class="output-wrapper">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="./js/index.js"></script>
+
+</html>

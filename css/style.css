@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1130px;
+    margin: 0 auto;
+    background: aliceblue;
+    margin-top: 200px;
+}
+
+.display-inlineblock {
+    display: inline-block;
+}
+
+/* text align */
+.text-start {
+    text-align: start;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-end {
+    text-align: end;
+}
+
+
+/* background color */
+.bg-blue {
+    background-color: #336699;
+}
+
+.bg-ash {
+    background-color: #E3E3E3;
+}
+
+.bg-lightash {
+    background-color: #F8F8F8;
+}
+
+
+/* color */
+.text-white {
+    color: #FFFFFF;
+}
+
+.text-black {
+    color: #000000;
+}
+
+/* font weight */
+.font-regular {
+    font-weight: 400;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+/* text size */
+.text-size-regular {
+    font-size: 18px;
+}
+
+.text-size-medium {
+    font-size: 20px;
+}
+
+
+
+/* .content-wrapper {
+    padding: 0 60px;
+} */
+
+.age-calculator .heading {
+    padding: 20px 60px;
+}
+
+.age-calculator .calculation-section {
+    padding: 50px 60px;
+    display: flex;
+}
+
+.age-calculator .calculation-section .inputs {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.age-calculator .calculation-section .outputs {
+    /* flex: 1; */
+    border-left: 2px solid #C9C9C9;
+    padding-left: 50px;
+}
+
+.age-calculator .calculation-section .outputs .output-wrapper p {
+    line-height: 30px;
+
+}
+
+.age-calculator .calculation-section .inputs .content {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.age-calculator .calculation-section .inputs .content .fields {
+    display: flex;
+    gap: 20px;
+
+}
+.age-calculator .calculation-section .inputs .content .fields .date-picker-with-image{
+    width: 60px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.age-calculator .calculation-section .inputs .content .fields .date-picker-with-image .date-picker input[type=date]{
+    position: absolute;
+    top: 25px;
+    right: 2px;
+    opacity: 0;
+    transform: scale(5);
+    height: 10px;
+    max-width: 60px;
+}
+
+
+.age-calculator .calculation-section .inputs .content .fields .field {
+    /* flex: 1; */
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.age-calculator .calculation-section .inputs .content .fields .field .image-wrapper {
+    height: 100%;
+    padding: 14px 15px;
+    background: #EFEFEF;
+    border: 1px solid #E3E3E3;
+    border-radius: 5px;
+
+}
+
+/* .image {
+    width: 100%;
+} */
+
+.opacity-light {
+    opacity: .4;
+}
+
+.age-calculator .calculation-section .inputs .content .label {
+    width: 150px;
+}
+
+.age-calculator .calculation-section .inputs select {
+    appearance: none;
+    background-image: url(../image/down-arrow.png);
+    background-repeat: no-repeat;
+    background-position: center right 25px;
+    background-size: 10px;
+    cursor: pointer;
+}
+
+.age-calculator .calculation-section .inputs .content .fields .field input,
+select {
+    width: 100px;
+    height: 100%;
+    padding: 10px 20px;
+    background: #EFEFEF;
+    border: 1px solid #E3E3E3;
+    border-radius: 5px;
+}
+
+
+.age-calculator .calculation-section .inputs .content .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.age-calculator .calculation-section .inputs .content .checkbox-wrapper input[type=checkbox] {
+    width: 24px;
+    height: 24px;
+}
+
+.age-calculator .calculation-section .inputs .content .button-wrapper .calculation-button {
+    padding: 18px 70px;
+    background: #336699;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.display-none{
+    display: none;
+}
+
+
+@media only screen and (max-width:500px) {
+    .container{
+        margin-top: 0;
+    }
+    .age-calculator .heading{
+        text-align: center;
+    }
+    .age-calculator .calculation-section{
+        padding: 20px ;
+    }
+    .age-calculator .calculation-section .inputs .content .label{
+        /* align-self: center; */
+        width: auto
+    }
+    .age-calculator .calculation-section .inputs .content {
+        flex-direction: column;
+    }
+    .age-calculator .calculation-section .inputs .content .fields {
+        flex-direction: column;
+    }
+    .age-calculator .calculation-section .outputs{
+        padding-left: 20px;
+    }
+    .age-calculator .calculation-section .inputs{
+        gap: 100px;
+    }
+    .age-calculator .calculation-section .inputs .content .fields .field input,
+    select {
+        width: 250px
+    }
+    .age-calculator .calculation-section {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+}
+
+@media only screen and (min-width:501px) and (max-width:850px) {
+    .container{
+        margin-top: 0;
+    }
+    .age-calculator .calculation-section .inputs .content {
+        flex-direction: column;
+    }
+    .age-calculator .calculation-section {
+        flex-direction: column;
+        gap: 100px;
+    }
+}
+
+@media only screen and (min-width:851px) and (max-width:1060px) {
+    .container{
+        margin-top: 0;
+    }
+    .age-calculator .calculation-section {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+    .age-calculator .calculation-section .inputs .content .fields .field input,
+    select {
+        width: 150px
+    }
+}
